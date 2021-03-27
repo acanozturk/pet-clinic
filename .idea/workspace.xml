@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="119d0398-efc8-456c-aeb6-a2a29a326025" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/target/pet-clinic-data-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/target/pet-clinic-data-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/test/java/petclinic/PetClinicApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/test/java/com/practice/petclinic/PetClinicApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/target/surefire-reports/TEST-petclinic.PetClinicApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/target/surefire-reports/petclinic.PetClinicApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/target/test-classes/petclinic/PetClinicApplicationTests.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/practice/petclinic/PetClinicApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/test/java/petclinic/PetClinicApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,17 +54,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PetClinicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="pet-clinic-web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="petclinic.PetClinicApplication" />
@@ -75,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616861656027</updated>
-      <workItem from="1616861657818" duration="2689000" />
+      <workItem from="1616861657818" duration="6015000" />
     </task>
     <servers />
   </component>
