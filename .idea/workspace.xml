@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="119d0398-efc8-456c-aeb6-a2a29a326025" name="Default Changelist" comment="" />
+    <list default="true" id="119d0398-efc8-456c-aeb6-a2a29a326025" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/OwnerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/PetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/VetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/pet-clinic-data.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/pet-clinic-data.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -44,6 +51,17 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PetClinicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="pet-clinic-web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="petclinic.PetClinicApplication" />
@@ -62,6 +80,7 @@
       <updated>1616861656027</updated>
       <workItem from="1616861657818" duration="6015000" />
       <workItem from="1616868752914" duration="656000" />
+      <workItem from="1616928395614" duration="645000" />
     </task>
     <servers />
   </component>
