@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="119d0398-efc8-456c-aeb6-a2a29a326025" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/pet-clinic-data.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/pet-clinic-data.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/target/classes/com/practice/petclinic/model/Owner.class" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/target/classes/com/practice/petclinic/model/Owner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/target/classes/com/practice/petclinic/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/target/classes/com/practice/petclinic/model/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/target/classes/com/practice/petclinic/model/Pet.class" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/target/classes/com/practice/petclinic/model/Pet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/target/classes/com/practice/petclinic/model/PetType.class" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/target/classes/com/practice/petclinic/model/PetType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/target/classes/com/practice/petclinic/model/Vet.class" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/target/classes/com/practice/petclinic/model/Vet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/target/pet-clinic-data-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-web/pet-clinic-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/pet-clinic-web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-web/target/classes/com/practice/petclinic/PetClinicApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/target/classes/com/practice/petclinic/PetClinicApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release.properties" beforeDir="false" afterPath="$PROJECT_DIR$/release.properties" afterDir="false" />
-    </list>
+    <list default="true" id="119d0398-efc8-456c-aeb6-a2a29a326025" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616861656027</updated>
       <workItem from="1616861657818" duration="6015000" />
-      <workItem from="1616868752914" duration="376000" />
+      <workItem from="1616868752914" duration="656000" />
     </task>
     <servers />
   </component>
