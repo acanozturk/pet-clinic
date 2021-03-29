@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="119d0398-efc8-456c-aeb6-a2a29a326025" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/controllers/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/controllers/VetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/vets/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +108,7 @@
       <workItem from="1616928395614" duration="1601000" />
       <workItem from="1616930040368" duration="916000" />
       <workItem from="1617032324076" duration="868000" />
-      <workItem from="1617039079202" duration="3866000" />
+      <workItem from="1617039079202" duration="5283000" />
     </task>
     <servers />
   </component>
