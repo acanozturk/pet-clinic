@@ -1,4 +1,4 @@
-package com.practice.petclinic.services;
+package com.practice.petclinic.services.map;
 
 import java.util.HashMap;
 import java.util.HashSet;
