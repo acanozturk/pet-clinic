@@ -17,6 +17,7 @@
     </properties>
 
     <dependencies>
+        <!-- Spring and Spring Boot dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -41,6 +42,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- end of Spring and Spring Boot dependencies -->
     </dependencies>
 
     <build>
