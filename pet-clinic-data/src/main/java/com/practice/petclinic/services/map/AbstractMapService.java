@@ -17,15 +17,13 @@ public abstract class AbstractMapService<T extends BaseEntity> {
     }
 
     T save(T object) {
-        if(object != null) {
-            if(object.getId() == null) {
-                object.setId(getNextId());
-            }
-            map.put(object.getId(), object);
-        } else {
-            throw new RuntimeException("Object can't be null.");
+        if(object == null) {
+            throw new IllegalStateException("Object cannot be null!");
+        } else if(object.getId() == null) {
+            object.setId(getNextId());
         }
-         return object;
+        map.put(object.getId(), object);
+        return object;
     }
 
     void deleteById(Long id) {
@@ -37,7 +35,6 @@ public abstract class AbstractMapService<T extends BaseEntity> {
     }
 
     private Long getNextId() {
-
         if(map.isEmpty()) {
             return 1L;
         } else {
