@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="119d0398-efc8-456c-aeb6-a2a29a326025" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/less/header.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/less/petclinic.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/less/responsive.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/less/typography.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/fragments/inputField.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/fragments/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/fragments/selectField.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/wro/wro.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/wro/wro.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-web/pet-clinic-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/pet-clinic-web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="119d0398-efc8-456c-aeb6-a2a29a326025" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +113,7 @@
       <workItem from="1617214667033" duration="1391000" />
       <workItem from="1617295685057" duration="7706000" />
       <workItem from="1617380725500" duration="2250000" />
-      <workItem from="1617465828160" duration="3002000" />
+      <workItem from="1617465828160" duration="3357000" />
     </task>
     <servers />
   </component>
