@@ -1,13 +1,7 @@
 package com.practice.petclinic.bootstrap;
 
-import com.practice.petclinic.model.Owner;
-import com.practice.petclinic.model.Pet;
-import com.practice.petclinic.model.PetType;
-import com.practice.petclinic.model.Vet;
-import com.practice.petclinic.services.OwnerService;
-import com.practice.petclinic.services.PetService;
-import com.practice.petclinic.services.PetTypeService;
-import com.practice.petclinic.services.VetService;
+import com.practice.petclinic.model.*;
+import com.practice.petclinic.services.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -21,18 +15,26 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final PetService petService;
+    private final SpecialityService specialityService;
 
     @Autowired
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, PetService petService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService,
+                      PetService petService, SpecialityService specialityService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.petService = petService;
+        this.specialityService = specialityService;
     }
 
     @Override
     public void run(String... args) throws Exception {
 
+        loadData();
+        System.out.println("Bootstrap is loaded.");
+    }
+
+    private void loadData() {
         PetType dog = new PetType();
         dog.setBreed("dog");
         petTypeService.save(dog);
@@ -73,16 +75,30 @@ public class DataLoader implements CommandLineRunner {
         petService.save(daisy);
         lionelMessi.getPets().add(daisy);
 
+        Speciality radiology = new Speciality();
+        radiology.setSpeciality("Radiology");
+        specialityService.save(radiology);
+
+        Speciality surgery = new Speciality();
+        surgery.setSpeciality("Surgery");
+        specialityService.save(surgery);
+
+        Speciality dentistry = new Speciality();
+        dentistry.setSpeciality("Dentistry");
+        specialityService.save(dentistry);
+
         Vet vet1 = new Vet();
         vet1.setFirstName("Bobby");
         vet1.setLastName("Williams");
+        vet1.getSpecialities().add(surgery);
+        vet1.getSpecialities().add(radiology);
         vetService.save(vet1);
 
         Vet vet2 = new Vet();
         vet2.setFirstName("Lauren");
         vet2.setLastName("Higgins");
+        vet2.getSpecialities().add(radiology);
+        vet2.getSpecialities().add(dentistry);
         vetService.save(vet2);
-
-        System.out.println("Bootstrap is loaded.");
     }
 }

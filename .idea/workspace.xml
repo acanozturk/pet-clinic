@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="119d0398-efc8-456c-aeb6-a2a29a326025" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/SpecialityMapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/SpecialityMapService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/bootstrap/DataLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +132,7 @@
       <workItem from="1617295685057" duration="7706000" />
       <workItem from="1617380725500" duration="2250000" />
       <workItem from="1617465828160" duration="5856000" />
-      <workItem from="1617525108591" duration="6895000" />
+      <workItem from="1617525108591" duration="8062000" />
     </task>
     <servers />
   </component>
