@@ -54,6 +54,7 @@ public class DataLoader implements CommandLineRunner {
         thunder.setPetType(dog);
         thunder.setBirthDate(LocalDate.of(2018, 4, 6));
         thunder.setOwner(michaelJordan);
+        petService.save(thunder);
         michaelJordan.getPets().add(thunder);
 
         Owner lionelMessi = new Owner();
@@ -69,6 +70,7 @@ public class DataLoader implements CommandLineRunner {
         daisy.setPetType(cat);
         daisy.setBirthDate(LocalDate.of(2019, 7, 20));
         daisy.setOwner(lionelMessi);
+        petService.save(daisy);
         lionelMessi.getPets().add(daisy);
 
         Vet vet1 = new Vet();
