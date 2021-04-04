@@ -4,6 +4,9 @@ public class Person extends BaseEntity {
 
     private String firstName;
     private String lastName;
+    private String address;
+    private String city;
+    private String phoneNumber;
 
     public String getFirstName() {
         return firstName;
@@ -21,4 +24,27 @@ public class Person extends BaseEntity {
         this.lastName = lastName;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
 }
