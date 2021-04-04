@@ -35,10 +35,6 @@ public abstract class AbstractMapService<T extends BaseEntity> {
     }
 
     private Long getNextId() {
-        if(map.isEmpty()) {
-            return 1L;
-        } else {
-            return Collections.max(map.keySet()) + 1;
-        }
+        return map.isEmpty() ? 1L : Collections.max(map.keySet()) + 1;
     }
 }
