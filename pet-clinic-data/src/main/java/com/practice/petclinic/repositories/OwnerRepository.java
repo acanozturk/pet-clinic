@@ -6,4 +6,6 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface OwnerRepository extends JpaRepository<Owner, Long> {
 
+    Owner findByLastName(String lastName);
+
 }
