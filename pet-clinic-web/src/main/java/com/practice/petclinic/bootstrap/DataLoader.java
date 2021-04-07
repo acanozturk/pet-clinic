@@ -9,33 +9,33 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDate;
 
 @Component
+
 public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
-    private final VetService vetService;
     private final PetService petService;
     private final PetTypeService petTypeService;
+    private final VetService vetService;
     private final SpecialityService specialityService;
     private final VisitService visitService;
 
     @Autowired
     public DataLoader(OwnerService ownerService,
-                      VetService vetService,
                       PetService petService,
                       PetTypeService petTypeService,
+                      VetService vetService,
                       SpecialityService specialityService,
                       VisitService visitService) {
         this.ownerService = ownerService;
-        this.vetService = vetService;
         this.petService = petService;
         this.petTypeService = petTypeService;
+        this.vetService = vetService;
         this.specialityService = specialityService;
         this.visitService = visitService;
     }
 
     @Override
     public void run(String... args) throws Exception {
-
         loadData();
         System.out.println("Bootstrap is loaded.");
     }
