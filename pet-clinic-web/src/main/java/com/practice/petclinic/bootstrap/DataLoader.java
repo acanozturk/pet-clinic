@@ -13,18 +13,24 @@ public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
     private final VetService vetService;
-    private final PetTypeService petTypeService;
     private final PetService petService;
+    private final PetTypeService petTypeService;
     private final SpecialityService specialityService;
+    private final VisitService visitService;
 
     @Autowired
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService,
-                      PetService petService, SpecialityService specialityService) {
+    public DataLoader(OwnerService ownerService,
+                      VetService vetService,
+                      PetService petService,
+                      PetTypeService petTypeService,
+                      SpecialityService specialityService,
+                      VisitService visitService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
-        this.petTypeService = petTypeService;
         this.petService = petService;
+        this.petTypeService = petTypeService;
         this.specialityService = specialityService;
+        this.visitService = visitService;
     }
 
     @Override
@@ -100,5 +106,13 @@ public class DataLoader implements CommandLineRunner {
         vet2.getSpecialities().add(radiology);
         vet2.getSpecialities().add(dentistry);
         vetService.save(vet2);
+
+        Visit thunderVisit = new Visit();
+        thunderVisit.setPet(thunder);
+        thunderVisit.setDate(LocalDate.of(2020, 4, 14));
+        thunderVisit.setDescription("Annual check-up");
+        thunder.getVisits().add(thunderVisit);
+        visitService.save(thunderVisit);
+
     }
 }

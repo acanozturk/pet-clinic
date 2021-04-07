@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 @Service
-@Profile("map")
+@Profile("jpa")
 public class VisitJpaService extends AbstractJpaService<Visit, VisitRepository> implements VisitService {
 
     public VisitJpaService(VisitRepository repository) {
