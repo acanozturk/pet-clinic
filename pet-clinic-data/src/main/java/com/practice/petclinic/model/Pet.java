@@ -20,7 +20,7 @@ public class Pet extends BaseEntity {
     @JoinColumn(name = "pet_type_id")
     private PetType petType;
 
-    @Column(name = "name")
+    @Column(name = "pet_name")
     private String name;
 
     @ManyToOne
@@ -33,10 +33,11 @@ public class Pet extends BaseEntity {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
     private Set<Visit> visits = new HashSet<>();
 
-    public Pet(PetType petType, String name, LocalDate birthDate) {
+    public Pet(PetType petType, String name, LocalDate birthDate, Owner owner) {
         this.petType = petType;
         this.name = name;
         this.birthDate = birthDate;
+        this.owner = owner;
     }
 
 }
