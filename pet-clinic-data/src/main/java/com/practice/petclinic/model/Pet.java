@@ -1,6 +1,7 @@
 package com.practice.petclinic.model;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -12,6 +13,7 @@ import java.util.Set;
 @Table(name = "pets")
 @Getter
 @Setter
+@NoArgsConstructor
 public class Pet extends BaseEntity {
 
     @ManyToOne
@@ -30,5 +32,11 @@ public class Pet extends BaseEntity {
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
     private Set<Visit> visits = new HashSet<>();
+
+    public Pet(PetType petType, String name, LocalDate birthDate) {
+        this.petType = petType;
+        this.name = name;
+        this.birthDate = birthDate;
+    }
 
 }

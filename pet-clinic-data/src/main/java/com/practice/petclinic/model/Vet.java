@@ -1,6 +1,7 @@
 package com.practice.petclinic.model;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -11,6 +12,7 @@ import java.util.Set;
 @Table(name = "vets")
 @Getter
 @Setter
+@NoArgsConstructor
 public class Vet extends Person {
 
     @ManyToMany(fetch = FetchType.EAGER)
@@ -19,4 +21,13 @@ public class Vet extends Person {
             inverseJoinColumns = @JoinColumn(name = "specialty_id"))
     private Set<Speciality> specialities = new HashSet<>();
 
+    public Vet(String firstName,
+               String lastName,
+               String address,
+               String city,
+               String phoneNumber,
+               Set<Speciality> specialities) {
+        super(firstName, lastName, address, city, phoneNumber);
+        this.specialities = specialities;
+    }
 }

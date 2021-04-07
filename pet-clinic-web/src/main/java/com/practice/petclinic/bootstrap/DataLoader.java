@@ -7,9 +7,10 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
+import java.util.Arrays;
+import java.util.Set;
 
 @Component
-
 public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
@@ -41,76 +42,80 @@ public class DataLoader implements CommandLineRunner {
     }
 
     private void loadData() {
-        PetType dog = new PetType();
-        dog.setBreed("dog");
+        PetType dog = new PetType("dog");
         petTypeService.save(dog);
 
-        PetType cat = new PetType();
-        cat.setBreed("cat");
+        PetType cat = new PetType("cat");
         petTypeService.save(cat);
 
-        Owner michaelJordan = new Owner();
-        michaelJordan.setFirstName("Michael");
-        michaelJordan.setLastName("Jordan");
-        michaelJordan.setCity("Austin, TX");
-        michaelJordan.setAddress("2300 Sundown Lane");
-        michaelJordan.setPhoneNumber("512-289-6703");
+        Owner michaelJordan = new Owner(
+                "Michael",
+                "Jordan",
+                "2300 Sundown Lane",
+                "Austin, TX",
+                "512-289-6703");
         ownerService.save(michaelJordan);
 
-        Pet thunder = new Pet();
-        thunder.setName("Thunder");
-        thunder.setPetType(dog);
-        thunder.setBirthDate(LocalDate.of(2018, 4, 6));
-        thunder.setOwner(michaelJordan);
-        petService.save(thunder);
-        michaelJordan.getPets().add(thunder);
-
-        Owner lionelMessi = new Owner();
-        lionelMessi.setFirstName("Lionel");
-        lionelMessi.setLastName("Messi");
-        lionelMessi.setCity("Cross Lake, MN");
-        lionelMessi.setAddress("2244 Eagle Lane");
-        lionelMessi.setPhoneNumber("218-239-9356");
+        Owner lionelMessi = new Owner(
+                "Lionel",
+                "Messi",
+                "2244 Eagle Lane",
+                "Cross Lake, MN",
+                "218-239-9356");
         ownerService.save(lionelMessi);
 
-        Pet daisy = new Pet();
-        daisy.setName("Daisy");
-        daisy.setPetType(cat);
-        daisy.setBirthDate(LocalDate.of(2019, 7, 20));
-        daisy.setOwner(lionelMessi);
+        Pet thunder = new Pet(
+                dog,
+                "Thunder",
+                LocalDate.of(2018, 4, 6)
+        );
+        petService.save(thunder);
+        thunder.setOwner(michaelJordan);
+        michaelJordan.getPets().add(thunder);
+
+        Pet daisy = new Pet(
+                cat,
+                "Daisy",
+                LocalDate.of(2019, 7, 20)
+        );
         petService.save(daisy);
+        daisy.setOwner(lionelMessi);
         lionelMessi.getPets().add(daisy);
 
-        Speciality radiology = new Speciality();
-        radiology.setSpeciality("Radiology");
+        Speciality radiology = new Speciality("Radiology");
         specialityService.save(radiology);
 
-        Speciality surgery = new Speciality();
-        surgery.setSpeciality("Surgery");
+        Speciality surgery = new Speciality("Surgery");
         specialityService.save(surgery);
 
-        Speciality dentistry = new Speciality();
-        dentistry.setSpeciality("Dentistry");
+        Speciality dentistry = new Speciality("Dentistry");
         specialityService.save(dentistry);
 
-        Vet vet1 = new Vet();
-        vet1.setFirstName("Bobby");
-        vet1.setLastName("Williams");
-        vet1.getSpecialities().add(surgery);
-        vet1.getSpecialities().add(radiology);
-        vetService.save(vet1);
+        Vet vetBobby = new Vet(
+                "Bobby",
+                "Williams",
+                "3758 Crosswind Drive",
+                "Louisville, KY",
+                "502-912-7402",
+                Set.of(radiology, dentistry)
+        );
+        vetService.save(vetBobby);
 
-        Vet vet2 = new Vet();
-        vet2.setFirstName("Lauren");
-        vet2.setLastName("Higgins");
-        vet2.getSpecialities().add(radiology);
-        vet2.getSpecialities().add(dentistry);
-        vetService.save(vet2);
+        Vet vetLauren = new Vet(
+                "Lauren",
+                "Higgins",
+                "2332 Murry Street",
+                "Virginia Beach, VA",
+                "757-420-8680",
+                Set.of(radiology, surgery)
+        );
+        vetService.save(vetLauren);
 
-        Visit thunderVisit = new Visit();
-        thunderVisit.setPet(thunder);
-        thunderVisit.setDate(LocalDate.of(2020, 4, 14));
-        thunderVisit.setDescription("Annual check-up");
+        Visit thunderVisit = new Visit(
+                LocalDate.of(2020, 4, 14),
+                "Annual check-up",
+                thunder
+        );
         thunder.getVisits().add(thunderVisit);
         visitService.save(thunderVisit);
 

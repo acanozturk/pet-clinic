@@ -1,6 +1,7 @@
 package com.practice.petclinic.model;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -10,6 +11,7 @@ import java.time.LocalDate;
 @Table(name = "visit")
 @Getter
 @Setter
+@NoArgsConstructor
 public class Visit extends BaseEntity {
 
     @Column(name = "date")
@@ -21,4 +23,10 @@ public class Visit extends BaseEntity {
     @ManyToOne
     @JoinColumn(name = "pet_id")
     private Pet pet;
+
+    public Visit(LocalDate date, String description, Pet pet) {
+        this.date = date;
+        this.description = description;
+        this.pet = pet;
+    }
 }

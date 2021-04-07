@@ -1,5 +1,6 @@
 package com.practice.petclinic.model;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,6 +13,7 @@ import java.io.Serializable;
 @MappedSuperclass
 @Getter
 @Setter
+@EqualsAndHashCode
 public class BaseEntity implements Serializable {
 
     @Id
