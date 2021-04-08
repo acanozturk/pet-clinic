@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4ad09c9-bbf0-4d54-a60f-fc0f294c251b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pet-clinic-data/src/test/java/com/practice/petclinic/services/jpa/OwnerJpaServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/test/java/com/practice/petclinic/controllers/OwnerControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/test/java/com/practice/petclinic/services/jpa/OwnerJpaServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/test/java/com/practice/petclinic/services/map/OwnerMapServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/test/java/com/practice/petclinic/services/map/OwnerMapServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,11 +63,12 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.practice.petclinic.controllers" />
       <recent name="com.practice.petclinic.services.jpa" />
       <recent name="com.practice.petclinic.services.map" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OwnerMapServiceTest">
+  <component name="RunManager" selected="JUnit.OwnerControllerTest">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -76,64 +80,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OwnerMapServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pet-clinic-data" />
+    <configuration name="OwnerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pet-clinic-web" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.practice.petclinic.services.map.*" />
+          <option name="PATTERN" value="com.practice.petclinic.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.practice.petclinic.services.map" />
-      <option name="MAIN_CLASS_NAME" value="com.practice.petclinic.services.map.OwnerMapServiceTest" />
+      <option name="PACKAGE_NAME" value="com.practice.petclinic.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.practice.petclinic.controllers.OwnerControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OwnerMapServiceTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pet-clinic-data" />
+    <configuration name="OwnerControllerTest.listOfOwners" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pet-clinic-web" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.practice.petclinic.services.map.*" />
+          <option name="PATTERN" value="com.practice.petclinic.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.practice.petclinic.services.map" />
-      <option name="MAIN_CLASS_NAME" value="com.practice.petclinic.services.map.OwnerMapServiceTest" />
+      <option name="PACKAGE_NAME" value="com.practice.petclinic.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.practice.petclinic.controllers.OwnerControllerTest" />
+      <option name="METHOD_NAME" value="listOfOwners" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OwnerJpaServiceTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pet-clinic-data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.practice.petclinic.services.jpa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.practice.petclinic.services.jpa" />
+      <option name="MAIN_CLASS_NAME" value="com.practice.petclinic.services.jpa.OwnerJpaServiceTest" />
       <option name="METHOD_NAME" value="findAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OwnerMapServiceTest.findByLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OwnerJpaServiceTest.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pet-clinic-data" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.practice.petclinic.services.map.*" />
+          <option name="PATTERN" value="com.practice.petclinic.services.jpa.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.practice.petclinic.services.map" />
-      <option name="MAIN_CLASS_NAME" value="com.practice.petclinic.services.map.OwnerMapServiceTest" />
-      <option name="METHOD_NAME" value="findByLastName" />
+      <option name="PACKAGE_NAME" value="com.practice.petclinic.services.jpa" />
+      <option name="MAIN_CLASS_NAME" value="com.practice.petclinic.services.jpa.OwnerJpaServiceTest" />
+      <option name="METHOD_NAME" value="findById" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PetClinicApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pet-clinic-web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.practice.petclinic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.practice.petclinic" />
-      <option name="MAIN_CLASS_NAME" value="com.practice.petclinic.PetClinicApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OwnerMapServiceTest" />
-        <item itemvalue="JUnit.OwnerMapServiceTest.findByLastName" />
-        <item itemvalue="JUnit.OwnerMapServiceTest.findAll" />
-        <item itemvalue="JUnit.PetClinicApplicationTests" />
+        <item itemvalue="JUnit.OwnerControllerTest" />
+        <item itemvalue="JUnit.OwnerControllerTest.listOfOwners" />
         <item itemvalue="Spring Boot.PetClinicApplication" />
+        <item itemvalue="JUnit.OwnerJpaServiceTest.findById" />
+        <item itemvalue="JUnit.OwnerJpaServiceTest.findAll" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +180,7 @@
       <workItem from="1617891661392" duration="655000" />
       <workItem from="1617892451285" duration="260000" />
       <workItem from="1617892729546" duration="835000" />
-      <workItem from="1617893599987" duration="8310000" />
+      <workItem from="1617893599987" duration="13754000" />
     </task>
     <servers />
   </component>

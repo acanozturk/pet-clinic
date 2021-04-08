@@ -11,7 +11,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class OwnerMapServiceTest {
 
     OwnerMapService ownerMapService;
-    Long id = 1L;
 
     @BeforeEach
     void setUp() {
@@ -22,7 +21,6 @@ class OwnerMapServiceTest {
                 "testAddress",
                 "testCity",
                 "testPhone");
-        testOwner.setId(id);
         ownerMapService.save(testOwner);
     }
 
@@ -34,8 +32,7 @@ class OwnerMapServiceTest {
 
     @Test
     void findById() {
-       Owner findOwner = ownerMapService.findById(id);
-
+       Owner findOwner = ownerMapService.findById(1L);
        assertEquals(1L, findOwner.getId());
     }
 
@@ -48,21 +45,18 @@ class OwnerMapServiceTest {
                 "savetestCity",
                 "savetestPhone");
         ownerMapService.save(saveOwner);
-
         assertEquals("savetestFirstName", saveOwner.getFirstName());
     }
 
     @Test
     void deleteById() {
-        ownerMapService.deleteById(id);
-
+        ownerMapService.deleteById(1L);
         assertEquals(0, ownerMapService.findAll().size());
     }
 
     @Test
     void delete() {
-        ownerMapService.delete(ownerMapService.findById(id));
-
+        ownerMapService.delete(ownerMapService.findById(1L));
         assertEquals(0, ownerMapService.findAll().size());
 
     }
@@ -76,7 +70,6 @@ class OwnerMapServiceTest {
                 "lastNameCity",
                 "lastNamePhone");
         ownerMapService.save(lastNameOwner);
-
         assertEquals(lastNameOwner, ownerMapService.findByLastName("lastNameSecondName"));
     }
 }
