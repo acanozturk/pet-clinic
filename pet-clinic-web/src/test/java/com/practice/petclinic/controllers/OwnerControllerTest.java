@@ -2,6 +2,7 @@ package com.practice.petclinic.controllers;
 
 import com.practice.petclinic.model.Owner;
 import com.practice.petclinic.services.OwnerService;
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -15,8 +16,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 import static org.mockito.Mockito.*;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
 
 @ExtendWith(MockitoExtension.class)
 class OwnerControllerTest {
@@ -40,12 +42,14 @@ class OwnerControllerTest {
                 "test1tAddress",
                 "test1City",
                 "test1Phone");
+        testOwner1.setId(1L);
         Owner testOwner2 = new Owner(
                 "test2tFirstName",
                 "test2SecondName",
                 "test2tAddress",
                 "test2City",
                 "test2Phone");
+        testOwner2.setId(2L);
         owners.add(testOwner1);
         owners.add(testOwner2);
 
@@ -59,6 +63,8 @@ class OwnerControllerTest {
         when(ownerService.findAll()).thenReturn(owners);
 
         mockMvc.perform(get("/owners/find"))
-                .andExpect(status().is(200));
+                .andExpect(status().isOk())
+                .andExpect(view().name("owners/index"))
+                .andExpect(model().attribute("owners", Matchers.hasSize(2)));
     }
 }
