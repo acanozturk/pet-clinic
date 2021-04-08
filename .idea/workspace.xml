@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4ad09c9-bbf0-4d54-a60f-fc0f294c251b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pet-clinic-data/src/test/java/com/practice/petclinic/services/map/OwnerMapServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/OwnerMapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/OwnerMapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/jpa/OwnerJpaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/jpa/OwnerJpaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/PetMapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/PetMapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/PetTypeMapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/PetTypeMapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/SpecialityMapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/SpecialityMapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/VetMapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/VetMapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/VisitMapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/VisitMapService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +180,7 @@
       <workItem from="1617891661392" duration="655000" />
       <workItem from="1617892451285" duration="260000" />
       <workItem from="1617892729546" duration="835000" />
-      <workItem from="1617893599987" duration="6758000" />
+      <workItem from="1617893599987" duration="7432000" />
     </task>
     <servers />
   </component>
