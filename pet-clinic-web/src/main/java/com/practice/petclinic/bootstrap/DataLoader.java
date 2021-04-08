@@ -55,8 +55,11 @@ public class DataLoader implements CommandLineRunner {
         // Create pet types
         PetType dog = new PetType("dog");
         PetType cat = new PetType("cat");
+        PetType owl = new PetType("owl");
         petTypeList.add(dog);
         petTypeList.add(cat);
+        petTypeList.add(owl);
+
 
         // Create owners
         Owner michaelJordan = new Owner(
@@ -85,10 +88,17 @@ public class DataLoader implements CommandLineRunner {
                 "Daisy",
                 LocalDate.of(2019, 7, 20),
                 lionelMessi);
+        Pet mojito = new Pet(
+                owl,
+                "Mojito",
+                LocalDate.of(2015, 9, 11),
+                lionelMessi);
         petList.add(thunder);
         petList.add(daisy);
+        petList.add(mojito);
         michaelJordan.getPets().add(thunder);
         lionelMessi.getPets().add(daisy);
+        lionelMessi.getPets().add(mojito);
 
         // Create specialties
         Speciality dentistry = new Speciality("Dentistry");
@@ -121,7 +131,14 @@ public class DataLoader implements CommandLineRunner {
                 "Annual check-up",
                 thunder);
         visitList.add(thunderVisit);
+        Visit mojitoVisit = new Visit(
+                LocalDate.of(2020, 5, 8),
+                "Vaccination",
+                mojito);
+        visitList.add(thunderVisit);
+        visitList.add(mojitoVisit);
         thunder.getVisits().add(thunderVisit);
+        mojito.getVisits().add(mojitoVisit);
 
         // Save objects to services
         petTypeList.forEach(petTypeService::save);
