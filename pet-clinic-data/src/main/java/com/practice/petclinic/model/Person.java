@@ -28,11 +28,7 @@ public class Person extends BaseEntity {
     @Column(name = "phone_number")
     private String phoneNumber;
 
-    protected Person(String firstName,
-                     String lastName,
-                     String address,
-                     String city,
-                     String phoneNumber) {
+    protected Person(String firstName, String lastName, String address, String city, String phoneNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
