@@ -2,7 +2,6 @@ package com.practice.petclinic.controllers;
 
 import com.practice.petclinic.model.Owner;
 import com.practice.petclinic.services.OwnerService;
-import org.hamcrest.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -84,7 +83,7 @@ class OwnerControllerTest {
 
     @Test
     void ownerFindFormReturnOne() throws Exception {
-        when(ownerService.findAllByLastName(anyString()))
+        when(ownerService.findByLastNameContainingIgnoreCase(anyString()))
                 .thenReturn(Arrays.asList(owners.stream()
                         .filter(owner -> owner.getId().equals(1L))
                         .findFirst()
@@ -99,7 +98,7 @@ class OwnerControllerTest {
     void ownerFindFormReturnMany() throws Exception {
         List<Owner> ownerTest = new ArrayList<>();
         ownerTest.addAll(owners);
-        when(ownerService.findAllByLastName(anyString()))
+        when(ownerService.findByLastNameContainingIgnoreCase(anyString()))
                 .thenReturn(ownerTest);
 
         mockMvc.perform(get("/owners"))

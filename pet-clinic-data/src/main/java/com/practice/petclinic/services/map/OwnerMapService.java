@@ -23,7 +23,7 @@ public class OwnerMapService extends AbstractMapService<Owner> implements OwnerS
     }
 
     @Override
-    public List<Owner> findAllByLastName(String lastName) {
+    public List<Owner> findByLastNameContainingIgnoreCase(String lastName) {
         return null;
     }
 }

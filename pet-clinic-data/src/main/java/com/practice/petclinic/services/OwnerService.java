@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface OwnerService extends CrudService<Owner> {
     Owner findByLastName(String lastName);
-    List<Owner> findAllByLastName(String lastName);
+    List<Owner> findByLastNameContainingIgnoreCase(String lastName);
 }

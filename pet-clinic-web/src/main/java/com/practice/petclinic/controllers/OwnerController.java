@@ -31,12 +31,6 @@ public class OwnerController {
         webDataBinder.setDisallowedFields("id");
     }
 
-//    @RequestMapping({"", "/", "/index", "/index.html"})
-//    public String ownersIndex(Model model) {
-//        model.addAttribute("owners", ownerService.findAll());
-//        return "owners/index";
-//    }
-
     @RequestMapping("/find")
     public String listOfOwners(Model model) {
         Owner owner = new Owner();
@@ -57,7 +51,7 @@ public class OwnerController {
             owner.setLastName("");
         }
 
-        List<Owner> results = ownerService.findAllByLastName(owner.getLastName());
+        List<Owner> results = ownerService.findByLastNameContainingIgnoreCase(owner.getLastName());
 
         if(results.isEmpty()) {
             bindingResult.rejectValue("lastName", "notFound", "not found");
@@ -71,5 +65,6 @@ public class OwnerController {
         }
     }
 
+    //TODO add remaining request methods
 
 }
