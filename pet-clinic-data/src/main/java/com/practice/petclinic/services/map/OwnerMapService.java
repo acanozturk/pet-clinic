@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @Profile({"default", "map"})
 @NoArgsConstructor
@@ -18,5 +20,10 @@ public class OwnerMapService extends AbstractMapService<Owner> implements OwnerS
                 .filter(owner -> owner.getLastName().equals(lastName))
                 .findFirst()
                 .orElse(null);
+    }
+
+    @Override
+    public List<Owner> findAllByLastName(String lastName) {
+        return null;
     }
 }

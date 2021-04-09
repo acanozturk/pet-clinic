@@ -99,6 +99,7 @@ public class DataLoader implements CommandLineRunner {
         specialityList.add(dentistry);
         specialityList.add(radiology);
         specialityList.add(surgery);
+
         // Create vets
         Vet vetBobby = new Vet(
                 "Bobby",
