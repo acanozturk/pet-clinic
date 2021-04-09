@@ -46,9 +46,9 @@ public class DataLoader implements CommandLineRunner {
         List<Visit> visitList = new ArrayList<>();
 
         // Create pet types
-        PetType dog = new PetType("dog");
-        PetType cat = new PetType("cat");
-        PetType owl = new PetType("owl");
+        PetType dog = new PetType("Dog");
+        PetType cat = new PetType("Cat");
+        PetType owl = new PetType("Owl");
         petTypeList.add(dog);
         petTypeList.add(cat);
         petTypeList.add(owl);
