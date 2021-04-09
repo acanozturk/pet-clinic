@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4ad09c9-bbf0-4d54-a60f-fc0f294c251b" name="Default Changelist" comment="" />
+    <list default="true" id="e4ad09c9-bbf0-4d54-a60f-fc0f294c251b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/controllers/OwnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/controllers/OwnerController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +31,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1qq9Reu6lpYxBwvres7BxJ8utZv" />
   <component name="ProjectViewState">
@@ -70,7 +76,7 @@
       <recent name="com.practice.petclinic.services.map" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.PetClinicApplication">
+  <component name="RunManager" selected="JUnit.OwnerControllerTest.displayOwner">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -162,8 +168,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.PetClinicApplication" />
         <item itemvalue="JUnit.OwnerControllerTest.displayOwner" />
+        <item itemvalue="Spring Boot.PetClinicApplication" />
         <item itemvalue="JUnit.OwnerControllerTest.listOfOwners" />
         <item itemvalue="JUnit.OwnerControllerTest" />
         <item itemvalue="JUnit.OwnerJpaServiceTest.findById" />
@@ -187,7 +193,7 @@
       <workItem from="1617893599987" duration="15137000" />
       <workItem from="1617951002407" duration="21000" />
       <workItem from="1617951072566" duration="493000" />
-      <workItem from="1617985945154" duration="4600000" />
+      <workItem from="1617985945154" duration="4942000" />
     </task>
     <servers />
   </component>
