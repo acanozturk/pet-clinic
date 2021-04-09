@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class VetController {
-
     private final VetService vetService;
 
     @Autowired
@@ -18,9 +17,7 @@ public class VetController {
 
     @RequestMapping({"", "/vets.html"})
     public String listOfVets(Model model) {
-
         model.addAttribute("vets", vetService.findAll());
-
         return "vets/index";
     }
 }

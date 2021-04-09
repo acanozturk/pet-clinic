@@ -13,7 +13,6 @@ import java.util.Set;
 
 @Component
 public class DataLoader implements CommandLineRunner {
-
     private final OwnerService ownerService;
     private final PetService petService;
     private final PetTypeService petTypeService;
@@ -34,13 +33,11 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
         loadData();
         System.out.println("Bootstrap is loaded.");
     }
 
     private void loadData() {
-
         List<PetType> petTypeList = new ArrayList<>();
         List<Owner> ownerList = new ArrayList<>();
         List<Pet> petList = new ArrayList<>();
@@ -55,7 +52,6 @@ public class DataLoader implements CommandLineRunner {
         petTypeList.add(dog);
         petTypeList.add(cat);
         petTypeList.add(owl);
-
 
         // Create owners
         Owner michaelJordan = new Owner(
@@ -143,7 +139,6 @@ public class DataLoader implements CommandLineRunner {
         specialityList.forEach(specialityService::save);
         vetList.forEach(vetService::save);
         visitList.forEach(visitService::save);
-
     }
 
 }

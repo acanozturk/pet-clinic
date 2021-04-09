@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4ad09c9-bbf0-4d54-a60f-fc0f294c251b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/owners/createOrUpdateOwnerForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/owners/findOwners.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/owners/ownerDetails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/owners/ownersList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/repositories/OwnerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/repositories/OwnerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/CrudService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/CrudService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/OwnerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/OwnerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/jpa/AbstractJpaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/jpa/AbstractJpaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/AbstractMapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/AbstractMapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/bootstrap/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/controllers/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/controllers/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/controllers/OwnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/controllers/OwnerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/controllers/VetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/controllers/VetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/test/java/com/practice/petclinic/controllers/OwnerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/test/java/com/practice/petclinic/controllers/OwnerControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,15 +63,22 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/owners" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Alican\IdeaProjects\pet-clinic\pet-clinic-web\src\main\resources\templates\owners" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alican\IdeaProjects\pet-clinic\.circleci" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.practice.petclinic.controllers" />
@@ -67,14 +86,16 @@
       <recent name="com.practice.petclinic.services.map" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OwnerControllerTest.listOfOwners">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.PetClinicApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -94,6 +115,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OwnerControllerTest.displayOwner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pet-clinic-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.practice.petclinic.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.practice.petclinic.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.practice.petclinic.controllers.OwnerControllerTest" />
+      <option name="METHOD_NAME" value="displayOwner" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OwnerControllerTest.listOfOwners" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pet-clinic-web" />
       <extension name="coverage">
@@ -105,22 +142,6 @@
       <option name="PACKAGE_NAME" value="com.practice.petclinic.controllers" />
       <option name="MAIN_CLASS_NAME" value="com.practice.petclinic.controllers.OwnerControllerTest" />
       <option name="METHOD_NAME" value="listOfOwners" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OwnerJpaServiceTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pet-clinic-data" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.practice.petclinic.services.jpa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.practice.petclinic.services.jpa" />
-      <option name="MAIN_CLASS_NAME" value="com.practice.petclinic.services.jpa.OwnerJpaServiceTest" />
-      <option name="METHOD_NAME" value="findAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.PetClinicApplication" />
+        <item itemvalue="JUnit.OwnerControllerTest.displayOwner" />
         <item itemvalue="JUnit.OwnerControllerTest.listOfOwners" />
         <item itemvalue="JUnit.OwnerControllerTest" />
-        <item itemvalue="Spring Boot.PetClinicApplication" />
         <item itemvalue="JUnit.OwnerJpaServiceTest.findById" />
-        <item itemvalue="JUnit.OwnerJpaServiceTest.findAll" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +202,8 @@
       <workItem from="1617892729546" duration="835000" />
       <workItem from="1617893599987" duration="15137000" />
       <workItem from="1617951002407" duration="21000" />
-      <workItem from="1617951072566" duration="321000" />
+      <workItem from="1617951072566" duration="493000" />
+      <workItem from="1617985945154" duration="2440000" />
     </task>
     <servers />
   </component>

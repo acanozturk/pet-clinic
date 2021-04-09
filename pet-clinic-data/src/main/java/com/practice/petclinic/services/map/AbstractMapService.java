@@ -6,7 +6,6 @@ import com.practice.petclinic.services.CrudService;
 import java.util.*;
 
 public abstract class AbstractMapService<T extends BaseEntity> implements CrudService<T> {
-
     protected Map<Long, T> map = new HashMap<>();
 
     @Override
