@@ -98,8 +98,4 @@ public class OwnerController {
             return "redirect:/owners/" + savedOwner.getId();
         }
     }
-
-
-
-
 }
