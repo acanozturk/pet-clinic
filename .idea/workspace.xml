@@ -5,23 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4ad09c9-bbf0-4d54-a60f-fc0f294c251b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/formatters/PetTypeFormatter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/test/java/com/practice/petclinic/controllers/PetControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/controllers/VisitController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/model/Owner.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/model/Owner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/repositories/OwnerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/repositories/OwnerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/repositories/PetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/repositories/PetRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/repositories/PetTypeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/repositories/PetTypeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/repositories/SpecialtyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/repositories/SpecialtyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/repositories/VetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/repositories/VetRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/repositories/VisitRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/repositories/VisitRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/PetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/PetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/jpa/PetJpaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/jpa/PetJpaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/PetMapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/PetMapService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/target/classes/com/practice/petclinic/model/Owner.class" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/target/classes/com/practice/petclinic/model/Owner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/controllers/PetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/controllers/PetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/pets/createOrUpdatePetForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/pets/createOrUpdatePetForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/test/java/com/practice/petclinic/controllers/OwnerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/test/java/com/practice/petclinic/controllers/OwnerControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/model/Visit.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/model/Visit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/pets/createOrUpdateVisitForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/pets/createOrUpdateVisitForm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,17 +77,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.PetClinicApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="OwnerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pet-clinic-web" />
       <extension name="coverage">
@@ -204,7 +180,7 @@
       <workItem from="1617951002407" duration="21000" />
       <workItem from="1617951072566" duration="493000" />
       <workItem from="1617985945154" duration="15176000" />
-      <workItem from="1618050865787" duration="15169000" />
+      <workItem from="1618050865787" duration="18685000" />
     </task>
     <servers />
   </component>
