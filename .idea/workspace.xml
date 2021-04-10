@@ -6,12 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e4ad09c9-bbf0-4d54-a60f-fc0f294c251b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/repositories/OwnerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/repositories/OwnerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/OwnerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/OwnerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/jpa/OwnerJpaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/jpa/OwnerJpaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/OwnerMapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/services/map/OwnerMapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/model/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/com/practice/petclinic/model/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/pet-clinic-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/pet-clinic-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/controllers/OwnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/java/com/practice/petclinic/controllers/OwnerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/owners/ownersList.html" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/owners/ownersList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/owners/createOrUpdateOwnerForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/owners/createOrUpdateOwnerForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/main/resources/templates/owners/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/test/java/com/practice/petclinic/controllers/OwnerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/test/java/com/practice/petclinic/controllers/OwnerControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,15 +80,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.PetClinicApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -108,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OwnerControllerTest.displayOwner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OwnerControllerTest.initializeUpdateOwnerForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pet-clinic-web" />
       <extension name="coverage">
         <pattern>
@@ -118,13 +116,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.practice.petclinic.controllers" />
       <option name="MAIN_CLASS_NAME" value="com.practice.petclinic.controllers.OwnerControllerTest" />
-      <option name="METHOD_NAME" value="displayOwner" />
+      <option name="METHOD_NAME" value="initializeUpdateOwnerForm" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OwnerControllerTest.listOfOwners" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OwnerControllerTest.processCreationForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pet-clinic-web" />
       <extension name="coverage">
         <pattern>
@@ -134,23 +132,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.practice.petclinic.controllers" />
       <option name="MAIN_CLASS_NAME" value="com.practice.petclinic.controllers.OwnerControllerTest" />
-      <option name="METHOD_NAME" value="listOfOwners" />
+      <option name="METHOD_NAME" value="processCreationForm" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PetClinicApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OwnerControllerTest.processUpdateOwnerForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pet-clinic-web" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.practice.petclinic.*" />
+          <option name="PATTERN" value="com.practice.petclinic.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.practice.petclinic" />
-      <option name="MAIN_CLASS_NAME" value="com.practice.petclinic.PetClinicApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.practice.petclinic.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.practice.petclinic.controllers.OwnerControllerTest" />
+      <option name="METHOD_NAME" value="processUpdateOwnerForm" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -172,9 +171,9 @@
       <list>
         <item itemvalue="Spring Boot.PetClinicApplication" />
         <item itemvalue="JUnit.OwnerControllerTest" />
-        <item itemvalue="JUnit.PetClinicApplicationTests" />
-        <item itemvalue="JUnit.OwnerControllerTest.displayOwner" />
-        <item itemvalue="JUnit.OwnerControllerTest.listOfOwners" />
+        <item itemvalue="JUnit.OwnerControllerTest.processUpdateOwnerForm" />
+        <item itemvalue="JUnit.OwnerControllerTest.initializeUpdateOwnerForm" />
+        <item itemvalue="JUnit.OwnerControllerTest.processCreationForm" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +194,8 @@
       <workItem from="1617893599987" duration="15137000" />
       <workItem from="1617951002407" duration="21000" />
       <workItem from="1617951072566" duration="493000" />
-      <workItem from="1617985945154" duration="14914000" />
+      <workItem from="1617985945154" duration="15176000" />
+      <workItem from="1618050865787" duration="4323000" />
     </task>
     <servers />
   </component>
