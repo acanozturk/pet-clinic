@@ -11,4 +11,9 @@ import org.springframework.stereotype.Service;
 @NoArgsConstructor
 public class PetMapService extends AbstractMapService<Pet> implements PetService {
 
+    @Override
+    public Pet findByNameContainingIgnoreCase(String name) {
+        return null;
+    }
+
 }

@@ -1,7 +1,6 @@
 package com.practice.petclinic.model;
 
 import lombok.*;
-import org.springframework.core.style.ToStringCreator;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -20,5 +19,4 @@ public class Owner extends Person {
     public Owner(String firstName, String lastName, String address, String city, String phoneNumber) {
         super(firstName, lastName, address, city, phoneNumber);
     }
-
 }

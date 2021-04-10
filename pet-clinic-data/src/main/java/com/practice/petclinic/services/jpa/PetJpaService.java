@@ -13,4 +13,9 @@ public class PetJpaService extends AbstractJpaService<Pet, PetRepository> implem
     public PetJpaService(PetRepository repository) {
         super(repository);
     }
+
+    @Override
+    public Pet findByNameContainingIgnoreCase(String name) {
+        return repository.findByNameContainingIgnoreCase(name);
+    }
 }

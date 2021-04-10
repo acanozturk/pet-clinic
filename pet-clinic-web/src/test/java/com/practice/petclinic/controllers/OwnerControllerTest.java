@@ -31,25 +31,14 @@ class OwnerControllerTest {
     OwnerController ownerController;
 
     MockMvc mockMvc;
-
     Set<Owner> owners;
 
     @BeforeEach
     void setUp() {
         owners = new HashSet<>();
-        Owner testOwner1 = new Owner(
-                "test1tFirstName",
-                "test1SecondName",
-                "test1tAddress",
-                "test1City",
-                "test1Phone");
+        Owner testOwner1 = new Owner();
         testOwner1.setId(1L);
-        Owner testOwner2 = new Owner(
-                "test2tFirstName",
-                "test2SecondName",
-                "test2tAddress",
-                "test2City",
-                "test2Phone");
+        Owner testOwner2 = new Owner();
         testOwner2.setId(2L);
         owners.add(testOwner1);
         owners.add(testOwner2);
@@ -121,12 +110,7 @@ class OwnerControllerTest {
 
     @Test
     void processCreationForm() throws Exception {
-        Owner testOwner = new Owner(
-                "testFirstName",
-                "testSecondName",
-                "testAddress",
-                "testCity",
-                "testPhone");
+        Owner testOwner = new Owner();
         testOwner.setId(3L);
         when(ownerService.save(ArgumentMatchers.any()))
                 .thenReturn(testOwner);
@@ -157,12 +141,7 @@ class OwnerControllerTest {
 
     @Test
     void processUpdateOwnerForm() throws Exception {
-        Owner testOwner = new Owner(
-                "testFirstName",
-                "testSecondName",
-                "testAddress",
-                "testCity",
-                "testPhone");
+        Owner testOwner = new Owner();
         testOwner.setId(3L);
         when(ownerService.save(ArgumentMatchers.any()))
                 .thenReturn(testOwner);
